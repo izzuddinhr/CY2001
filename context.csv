@@ -1,0 +1,81 @@
+object_label,comfort_tendency,description
+bicycle,neutral,Mode of transport; no direct indoor thermal comfort meaning
+car,neutral,Vehicle; usually outside the building
+motorcycle,neutral,Vehicle; usually outside the building
+airplane,neutral,Aircraft; no indoor comfort meaning
+bus,neutral,Public transport; no indoor comfort meaning
+train,neutral,Public transport; no indoor comfort meaning
+truck,neutral,Freight vehicle; no indoor comfort meaning
+boat,neutral,Water vehicle; no indoor comfort meaning
+traffic light,neutral,Infrastructure; no comfort meaning
+fire hydrant,neutral,Infrastructure; no comfort meaning
+stop sign,neutral,Traffic sign; no comfort meaning
+parking meter,neutral,Street object; no comfort meaning
+bench,neutral,Seating; very weak comfort signal
+bird,neutral,Animal; no thermal comfort meaning
+cat,neutral,Animal; no thermal comfort meaning
+dog,neutral,Animal; no thermal comfort meaning
+horse,neutral,Animal; no thermal comfort meaning
+sheep,neutral,Animal; no thermal comfort meaning
+cow,neutral,Animal; no thermal comfort meaning
+elephant,neutral,Animal; no thermal comfort meaning
+bear,neutral,Animal; no thermal comfort meaning
+zebra,neutral,Animal; no thermal comfort meaning
+giraffe,neutral,Animal; no thermal comfort meaning
+backpack,cold,May act as extra insulation; weak sign of feeling cold
+umbrella,neutral,Weather-related object; weak indoor comfort cue
+handbag,cold,May act as extra insulation; weak sign of feeling cold
+tie,neutral,Formal accessory; no direct thermal meaning
+suitcase,neutral,Luggage; no direct thermal meaning
+frisbee,neutral,Sport item; no comfort meaning
+skis,neutral,Winter sports gear; environment already cold
+snowboard,neutral,Winter sports gear; environment already cold
+sports ball,neutral,Sport item; no comfort meaning
+kite,neutral,Outdoor toy; no indoor comfort meaning
+baseball bat,neutral,Sport item; no comfort meaning
+baseball glove,neutral,Sport item; no comfort meaning
+skateboard,neutral,Sport item; no comfort meaning
+surfboard,neutral,Water sport item; no indoor comfort meaning
+tennis racket,neutral,Sport item; no comfort meaning
+bottle,hot,Drinking water or cold drink; often used when feeling warm
+wine glass,neutral,Glass for wine or drink; weak thermal comfort indicator
+cup,hot,Drinks container; may be hot or cold but suggests thermal regulation
+fork,neutral,Utensil; no comfort meaning
+knife,neutral,Utensil; no comfort meaning
+spoon,neutral,Utensil; no comfort meaning
+bowl,neutral,Food container; weak thermal comfort indicator
+banana,neutral,Food; no strong comfort signal
+apple,neutral,Food; no strong comfort signal
+sandwich,hot,Heavier food; weak hot indicator during warm breaks
+orange,neutral,Food; no strong comfort signal
+broccoli,neutral,Food; no strong comfort signal
+carrot,neutral,Food; no strong comfort signal
+hot dog,hot,Hot food; weak hot indicator
+pizza,hot,Hot food; weak hot indicator
+donut,neutral,Sweet snack; no strong comfort link
+cake,neutral,Dessert; no strong comfort link
+chair,neutral,Seating; may combine with blanket or jacket in logic
+couch,neutral,Soft seating; may combine with blanket in logic
+potted plant,neutral,Decor item such as desk plant; no direct comfort meaning
+bed,neutral,Furniture; comfort meaning depends on blankets not detected separately
+dining table,neutral,Furniture; no direct comfort meaning
+toilet,neutral,Bathroom fixture; no thermal comfort meaning
+tv,neutral,Screen; slight local heat but negligible
+laptop,hot,Device that can add heat to local environment
+mouse,neutral,Input device; no comfort meaning
+remote,neutral,Control device; can indicate AC or fan usage when combined with other cues
+keyboard,neutral,Input device; no comfort meaning
+cell phone,neutral,Personal device; no comfort meaning
+microwave,hot,Appliance for heating food; local hot environment
+oven,hot,Appliance for heating food; strong local heat source
+toaster,hot,Small appliance generating heat briefly
+sink,neutral,Fixture; no direct comfort meaning
+refrigerator,cold,Appliance keeping items cold; indicator of colder environment
+book,neutral,Reading material; no direct comfort meaning
+clock,neutral,Timekeeping device; no comfort meaning
+vase,neutral,Decor item; no comfort meaning
+scissors,neutral,Tool; no comfort meaning
+teddy bear,neutral,Toy; emotional but not thermal comfort
+hair drier,hot,Device blowing hot air; strong hot indicator when in use
+toothbrush,neutral,Personal care item; no thermal meaning
+hair brush,neutral,Personal care item; no thermal meaning

@@ -1,0 +1,15 @@
+recordings/
+data/
+dataset/
+dataset4/
+fashion4c/
+runs/
+inference_frames/
+ra_venv/
+scripts/
+*.pt
+!best.pt
+out*.mp4
+data.yaml
+__pycache__/
+*.pyc

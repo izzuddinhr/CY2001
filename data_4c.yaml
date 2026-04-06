@@ -1,0 +1,8 @@
+path: dataset4
+train: images/train
+val: images/val
+names:
+  0: sweater
+  1: scarf
+  2: cardigan
+  3: jacket
