@@ -572,9 +572,13 @@ def main() -> None:
 
     print("\n=== Final Room Summary (mode over run) ===")
 
-    total_frames = sum(sum(st.run_counter.values()) for st in tracks.values())
-    avg_frames = total_frames / max(len(tracks), 1)
-    MIN_FRAMES = int(args.min_frames_pct * avg_frames)  # ignore ghost tracks below this threshold
+    all_counts = [sum(st_p.run_counter.values()) for st_p in tracks.values()]
+
+    # Only include tracks with at least 10 frames in the average to avoid ghost track dilution
+    meaningful = [c for c in all_counts if c >= 10]
+
+    avg_frames = sum(meaningful) / max(len(meaningful), 1)
+    MIN_FRAMES = int(args.min_frames_pct * avg_frames)
 
     person_finals = {
         pid: st.run_counter.most_common(1)[0][0]

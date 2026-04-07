@@ -184,3 +184,54 @@ Overall room summary: Cold
 ```
 
 Saved video: annotated with bounding boxes, person IDs, comfort states, clothing/object detections, and optional debug metrics overlay.
+
+---
+
+## Streamlit Dashboard
+
+An interactive web dashboard is included for visualising analysis results. It runs the full inference pipeline on an uploaded video and displays charts, per-person breakdowns, and room-level conclusions.
+
+### Additional Requirements
+
+```bash
+pip install streamlit plotly pandas
+```
+
+### Running the Dashboard
+
+```bash
+# If streamlit is on your PATH
+streamlit run dashboard.py
+
+# If not recognised (common on Windows)
+python -m streamlit run dashboard.py
+```
+
+The dashboard will open at `http://localhost:8501` in your browser.
+
+### Dashboard Features
+
+| Section | Description |
+|---|---|
+| Sidebar | Adjust all model paths, confidence thresholds, pose thresholds, and room conclusion settings without touching the code |
+| Room conclusion badge | Hot / Neutral / Cold with ASHRAE 55 threshold displayed |
+| Metrics row | People feeling hot, neutral, cold, and total tracked |
+| Donut chart | Person state distribution across the full video |
+| Room state timeline | Frame-by-frame room label plotted over time |
+| Stacked area chart | Hot / Neutral / Cold person counts per frame |
+| Pose behaviour bar chart | Which pose cues were detected most frequently |
+| Room distribution bar | How many frames each room state held |
+| Per-person table | Each tracked person's final state and frame-by-frame breakdown |
+| Frame log table | Raw per-frame data exportable for further analysis |
+
+### Usage Notes
+
+- Upload any `.mp4`, `.avi`, `.mov`, or `.mkv` file using the file uploader
+- Press **Run Analysis** to begin inference — this may take several minutes depending on video length and model size
+- The sidebar **Dissatisfaction threshold (%)** slider controls the room conclusion rule (default 20%, per ASHRAE 55 / ISO 7730)
+- The sidebar **Min track length (%)** slider controls ghost track filtering — increase if too many people are counted, decrease if valid people are being excluded
+- The dashboard runs on CPU by default; for faster inference on long videos use the command-line script with `--device cuda` on a GPU server instead
+
+### Known Limitation
+
+The dashboard does not support live webcam input — it is designed for post-analysis of recorded video files. For real-time webcam monitoring use the command-line script with `--source 0`.
