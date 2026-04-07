@@ -203,7 +203,7 @@ pip install streamlit plotly pandas
 # If streamlit is on your PATH
 streamlit run dashboard.py
 
-# If not recognised (common on Windows)
+# If not recognised
 python -m streamlit run dashboard.py
 ```
 
